@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(ardupilot_sitl_models)
+project(hexadrone)
 
 # --------------------------------------------------------------------------- #
 # Find dependencies.

@@ -17,7 +17,7 @@
         <pose>0 0 0.25 -1.585 0 0</pose>
         <geometry>
           <mesh>
-            <uri>file:///home/aerobase/hexadrone/models/hexadrone_model/meshes/base_link.STL</uri>
+            <uri>../models/hexadrone_model/meshes/base_link.STL</uri>
           </mesh>
         </geometry>
       </visual>
@@ -27,7 +27,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/aerobase/hexadrone/models/hexadrone_model/meshes/base_link.STL</uri>
+            <uri>../models/hexadrone_model/meshes/base_link.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -98,7 +98,7 @@
         <geometry>
           <mesh>
             <scale>0.7 0.7 0.7</scale>
-            <uri>file:///home/aerobase/hexadrone/models/hexadrone_model/meshes/iris_prop_cw.dae</uri>
+            <uri>../models/hexadrone_model/meshes/iris_prop_cw.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -150,7 +150,7 @@
         <geometry>
           <mesh>
             <scale>0.7 0.7 0.7</scale>
-            <uri>file:///home/aerobase/hexadrone/models/hexadrone_model/meshes/iris_prop_ccw.dae</uri>
+            <uri>../models/hexadrone_model/meshes/iris_prop_ccw.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -202,7 +202,7 @@
         <geometry>
           <mesh>
             <scale>0.7 0.7 0.7</scale>
-            <uri>file:///home/aerobase/hexadrone/models/hexadrone_model/meshes/iris_prop_cw.dae</uri>
+            <uri>../models/hexadrone_model/meshes/iris_prop_cw.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -254,7 +254,7 @@
         <geometry>
           <mesh>
             <scale>0.7 0.7 0.7</scale>
-            <uri>file:///home/aerobase/hexadrone/models/hexadrone_model/meshes/iris_prop_ccw.dae</uri>
+            <uri>../models/hexadrone_model/meshes/iris_prop_ccw.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -306,7 +306,7 @@
         <geometry>
           <mesh>
             <scale>0.7 0.7 0.7</scale>
-            <uri>file:///home/aerobase/hexadrone/models/hexadrone_model/meshes/iris_prop_ccw.dae</uri>
+            <uri>../models/hexadrone_model/meshes/iris_prop_ccw.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -358,7 +358,7 @@
         <geometry>
           <mesh>
             <scale>0.7 0.7 0.7</scale>
-            <uri>file:///home/aerobase/hexadrone/models/hexadrone_model/meshes/iris_prop_cw.dae</uri>
+            <uri>../models/hexadrone_model/meshes/iris_prop_cw.dae</uri>
           </mesh>
         </geometry>
         <material>

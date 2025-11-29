@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>ardupilot_sitl_models</name>
+  <name>hexadrone</name>
   <version>0.0.0</version>
-  <description>Gazebo models configured for ArduPilot SITL</description>
-  <maintainer email="rhys.mainwaring@me.com">Rhys Mainwaring</maintainer>
-  <license>GPL-3.0</license>
-  <author>Rhys Mainwaring</author>
+  <description>Hexadrone Gazebo simulation package for KRTI 2025</description>
+  <maintainer email="gareth.harrison@binus.ac.id">Gareth Harrison</maintainer>
+  <maintainer email="maulana.muammar@binus.ac.id">Maulana Mu'ammar</maintainer>
+  <license>MIT</license>
+  <author>Gareth Harrison</author>
+  <author>Maulana Mu'ammar</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <test_depend>ament_lint_auto</test_depend>

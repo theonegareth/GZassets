@@ -8,9 +8,10 @@ The drone is modeled for integration with **Gazebo Sim** and **ROS 2 Jazzy**, su
 
 - ✅ Full SDF/URDF drone model
 - ✅ Meshes for frame, propellers, and camera mounts
-- ✅ Sensor configurations (camera, IMU, LiDAR-ready) **NOT IMPLEMENTED**
-- ✅ Coordinate transform trees (`tf`) **NOT IMPLEMENTED**
-- ✅ Launch files for testing in simulation
+- ✅ Gazebo Sim world with ground plane
+- ❌ Sensor configurations (camera, IMU, LiDAR-ready) **NOT IMPLEMENTED**
+- ❌ Coordinate transform trees (`tf`) **NOT IMPLEMENTED**
+- ❌ ROS 2 launch files for testing in simulation
 
 ## 📁 Folder Structure
 
@@ -32,39 +33,42 @@ GZassets/
 
 ### Requirements
 
-- [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/index.html)
-- [Gazebo Sim](https://gazebosim.org/)
-- [colcon](https://docs.ros.org/en/rolling/Tutorials/Colcon-Tutorial.html)
+- [Gazebo Sim](https://gazebosim.org/) (Harmonic or later)
+- [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/index.html) (optional, for ROS integration)
+- [colcon](https://docs.ros.org/en/rolling/Tutorials/Colcon-Tutorial.html) (optional)
 
-### Clone the Repository
+### Running the Simulation
 
 ```bash
-git clone https://github.com/BINUS-ASO-AeroBASE/GZassets.git
-cd GZassets
+cd GZassets/hexadrone/worlds
+gz sim -v4 -r hexadrone_runway.sdf
+```
 
-Build the Workspace
+### ROS 2 Integration (Work in Progress)
 
-cd ~/your_ros2_ws
+The ROS 2 launch files are currently being developed. To build with ROS 2:
+
+```bash
+# Clone and build
+cd ~/your_ros2_ws/src
+git clone https://github.com/theonegareth/GZassets.git
+cd ..
 colcon build
 source install/setup.bash
-```
-Launch the Drone in Gazebo
-```
-ros2 launch drone_description bringup.launch.py
-```
-You can also spawn the drone in custom environments via:
-```
-ros2 launch drone_description spawn_drone.launch.py world:=your_custom_world
+
+# Launch (coming soon)
+ros2 launch hexadrone bringup.launch.py
+ros2 launch hexadrone spawn_drone.launch.py world:=your_custom_world
 ```
 
 
-## 📷 Sensors Included **NOT IMPLEMENTED YET**
+## 📷 Sensors Status
 
-| Sensor         | Type      | Interface     |
-|----------------|-----------|---------------|
-| IMU            | Simulated | `/imu`        |
-| Camera (Front) | RGB       | `/image_raw`  |
-| LiDAR          | 2D/3D     | `/scan`       |
+| Sensor         | Status    | Topic         | Notes                          |
+|----------------|-----------|---------------|--------------------------------|
+| IMU            | ⚠️ Partial | `/imu`        | Sensor defined, ROS bridge WIP |
+| Camera (Front) | ❌ Not Implemented | `/image_raw`  |                                |
+| LiDAR          | ❌ Not Implemented | `/scan`       |                                |
 
 ---
 

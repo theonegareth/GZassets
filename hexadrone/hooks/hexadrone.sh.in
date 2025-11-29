@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Add Gazebo resource paths
+export GZ_SIM_RESOURCE_PATH="@CMAKE_INSTALL_PREFIX@/share/@PROJECT_NAME@/models:$GZ_SIM_RESOURCE_PATH"
+export GZ_SIM_RESOURCE_PATH="@CMAKE_INSTALL_PREFIX@/share/@PROJECT_NAME@/worlds:$GZ_SIM_RESOURCE_PATH"
